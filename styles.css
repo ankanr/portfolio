@@ -39,3 +39,20 @@ h1 {
   color: #7afae3;
   font-size: 3rem;
 }
+
+main div {
+  display: flex;
+  align-items: center;
+}
+
+.float {
+  display: none;
+}
+
+.social img {
+  margin: 1rem;
+}
+
+.social img:hover {
+  transform: scale(1.5);
+}
