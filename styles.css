@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  background-color: #ea6866;
+  color: #fff;
+  font-family: "B612", sans-serif;
+}
+
+.container {
+  width: 850px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.option {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #7afae3;
+  font-size: 3rem;
+}
