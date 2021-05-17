@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
 *,
 *::before,
 *::after {
@@ -9,15 +11,26 @@
 html,
 body {
   box-sizing: border-box;
-  background-color: #ea6866;
+  /* background-color: #ea6866; */
+  background-color: #000;
   color: #fff;
-  font-family: "B612", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
 }
 
 .container {
   width: 850px;
   margin: 0 auto;
   padding: 2rem;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .option {
@@ -25,24 +38,18 @@ body {
   text-decoration: none;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  width: 350px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
 h1 {
-  color: #7afae3;
+  /* color: #7afae3; */
   font-size: 3rem;
+  margin: 1rem;
+  margin-right: 0rem;
 }
 
 main div {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 1rem;
 }
 
 .float {
@@ -55,4 +62,19 @@ main div {
 
 .social img:hover {
   transform: scale(1.5);
+}
+
+.cursor {
+  color: #fff;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
 }
